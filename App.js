@@ -153,8 +153,7 @@ app.post("/tasks/:taskId/subtasks", async (req, res) => {
 
         const newSubtask = {
             title: name,
-            superSubtask: [],
-            activityLog: logActivity()
+            superSubtask: []
         };
 
         task.subtasks.push(newSubtask);
